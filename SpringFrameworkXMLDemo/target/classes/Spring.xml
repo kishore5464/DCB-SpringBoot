@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+      <bean id="vaathi" class="com.kishore.entity.Teacher">
+		 <constructor-arg name="name" value="Kamala"></constructor-arg> 
+		 <!-- <property name="name" value="Kamalakannan"></property> -->
+	  	  <property name="student" ref="pakki"></property>
+	  </bean>
+	  
+      <bean id="pakki" class="com.kishore.entity.Student"></bean>
+</beans>
